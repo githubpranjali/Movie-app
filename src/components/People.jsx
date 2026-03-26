@@ -20,7 +20,7 @@ const People = () => {
      const GetPeople = async () => {
         try {
             const { data } = await axios.get(`/person/${category}?page=${page}`);
-              
+              console.log(data);
             if(data.results.length >0){
               setpeople((prevState)=>[...prevState, ...data.results])
              setpage(page+1)
@@ -33,6 +33,7 @@ const People = () => {
             console.log("Error", error)
         }
     }
+    
       const refreshHandler=  ()=>{
         if(people.length===0){
             GetPeople()
