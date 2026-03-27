@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import noimage from '/noimage.jpeg'
 
 const Cards = ({ data, title }) => {
-   console.log(data);
+  
     return (
         
         <div className='flex flex-wrap w-full h-full px-[5%] bg-[#1F1E24]'>
