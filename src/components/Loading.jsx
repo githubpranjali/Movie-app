@@ -1,13 +1,16 @@
-import Loader from '/Loader.jpeg'
+import Lottie from "lottie-react";
+import Loader from "../asset/Loader.json";
 
 const Loading = () => {
-   
   return (
-   
-    <div className='w-screen h-screen flex justify-center items-center bg-black'>
-        <img className="h-[50%] object-cover bg-transparent " src={Loader} alt="" />
+    <div className="w-screen h-screen flex justify-center items-center bg-black">
+      <Lottie 
+        animationData={Loader} 
+        loop 
+        className="w-[800px] h-[800px]"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Loading
+export default Loading;
